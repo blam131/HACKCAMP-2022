@@ -14,9 +14,9 @@ def get_leaderboard():
         "leaderboard": leaderboard
     })
 
-@app.route('/submit/<quote>/<username>', methods = ['POST'])
-def submit(quote, username):
-    passed = main.submit_quote(quote, username)
+@app.route('/submit/<username>/<quote>', methods = ['POST'])
+def submit(username, quote):
+    passed = main.submit_quote(username, quote)
     return jsonify({
         "passed": passed
     })
@@ -26,8 +26,8 @@ def get_user_quote():
     user_quote = main.get_user_quote()
     return jsonify({
         "id": user_quote.id,
-        "quote": user_quote.quote,
-        "username": user_quote.username
+        "quote": user_quote.username,
+        "username": user_quote.quote
     })
 
 if __name__ == "__main__":

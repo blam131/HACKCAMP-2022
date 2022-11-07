@@ -26,13 +26,3 @@ def like(id):
     for quote_object in quote_list:
         if quote_object.id == id:
             quote_object.like()
-
-submit_quote("bob", "hi")
-submit_quote("bob", "hi")
-submit_quote("bob", "hi")
-submit_quote("bob", "hi")
-submit_quote("bob", "hi")
-submit_quote("bob", "hi")
-submit_quote("bob", "hi")
-
-print(get_leaderboard())
