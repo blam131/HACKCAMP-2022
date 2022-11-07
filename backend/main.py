@@ -32,7 +32,7 @@ def submit_quote(username, quote):
 
 def get_leaderboard():
     sorted_list = sorted(quote_list, key=lambda x: x.likes, reverse=True)
-    leaderboard = [quote_object for ind, quote_object in enumerate(sorted_list) if ind<10]
+    leaderboard = [quote_object for ind, quote_object in enumerate(sorted_list) if ind<5]
     leaderboard_json = [quote_object.to_json() for quote_object in leaderboard]
     return leaderboard_json
 
