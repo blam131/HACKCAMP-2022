@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-rows: 10vh 85vh 5vh;
+}
+
+.main-block {
+    display: grid;
+    grid-template-columns: 60vw;
+    grid-template-rows: 8rem 4rem 4rem 4rem 4rem 4rem ;
+}
+
+.center-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ranking {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-content: center;
+    justify-items: center;
+   
+}
+
+.link-to-set-new-quote {
+    background-color: lightblue;
+}

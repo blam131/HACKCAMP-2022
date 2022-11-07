@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/063330461c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Inspo</title>
+  </head>
+  <body class="container">
+    <div class="header"></div>
+      <div class="main-block">
+        <div class="main-block-container">
+          <h1 class="quote">
+            Everything is approximate. Don’t aim to be right. Aim to be less wrong.
+          </h1>
+          <h2 class="author">By Zat Rana</h2>
+          <div class="options-bar">
+            <a href=""></a>
+            <a class="link-default" href="leaderboard.html">
+            <img
+                src="images/game_leaderboard_rank_ranking_competition_icon_133762.svg"
+                alt="" height="100%"
+            />
+            </a>
+            <button class="button-default" data-modal-target="#modal">
+              <img
+                src="images/lightbulb_on_outline_icon_139413.svg"
+                alt=""
+                height="100%"
+              />
+            </button>
+            <button class="button-default like-button-default like-button-pressed">
+              <img src="images/love_like_heart_icon_194836.svg" alt="" height="85%" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="modal" id="modal">
+        <div class="modal-header">
+          <div class="title">
+            share a quote
+          </div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <h3>Username:</h3>
+            <input class="username-input text-box-default" type="text">
+            
+            <h3>Quote:</h3>
+
+    <section class = "quotes">
+        <input type = "string" class="quotes text-box-default"/>
+        <button class = "quotes " style="width: 12%;" data-close-button class="close-button">submit</button>
+    </section>
+
+        </div>
+      </div>
+      <div id="overlay"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

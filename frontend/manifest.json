@@ -1,0 +1,9 @@
+{
+    "manifest_version": 3,
+    "name": "Inspirational",
+    "version": "1.0",
+
+    "default_locale": "en",
+    "description": "A place to share and receive bits quotes of inspiration!"
+}
+
