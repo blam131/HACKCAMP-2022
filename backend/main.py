@@ -13,7 +13,7 @@ def submit_quote(username, quote):
     id = len(quote_list) 
     quote_object = UserQuote(id, username, quote)
     quote_list.append(quote_object)
-    return (True)
+    return True
 
 def get_leaderboard():
     sorted_list = sorted(quote_list, key=lambda x: x.likes, reverse=True)
