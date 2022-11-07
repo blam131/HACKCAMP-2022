@@ -16,5 +16,5 @@ class UserQuote():
             "id": self.id, 
             "username": self.username,
             "quote": self.quote,
-            "likes": self.likes,        
+            "likes": self.likes        
         }

@@ -1,14 +1,27 @@
 from UserQuote import UserQuote
+<<<<<<< HEAD
 import random
 from datetime import datetime
+=======
+from profanity_filter import ProfanityFilter
+
+pf = ProfanityFilter()
+>>>>>>> 2bc46001588c402f548e18777b120171423e8268
 
 quote_list = []
 
 def submit_quote(username, quote):
+<<<<<<< HEAD
     id = len(quote_list)
+=======
+    if pf.is_profane(quote):
+        return (False)
+    id = len(quote_list) + 1
+>>>>>>> 2bc46001588c402f548e18777b120171423e8268
     quote_object = UserQuote(id, username, quote)
     now = datetime.now()
     quote_list.append(quote_object)
+    return (True)
 
 def get_leaderboard():
     sorted_list = sorted(quote_list, key=lambda x: x.likes, reverse=True)
